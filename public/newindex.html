@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="toneles">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Los Toneles </title>
+		<meta name="description" content="los toneles web">
+		<base href="/">
+		<link rel="stylesheet" type="text/css" href="/lib/angular/angular-csp.css">
+		<link rel="stylesheet" type="text/css" href="/lib/angular-ui/build/angular-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/lib/angular-bootstrap/ui-bootstrap-csp.css">
+		
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8">
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Home</a> <span class="divider">/</span>
+						</li>
+						<li>
+							<a href="#">Library</a> <span class="divider">/</span>
+						</li>
+						<li class="active">
+							Data
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<form role="form">
+						<div class="input-group">
+							<input type="text" class="form-control">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">Buscar</button>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<a  ui-sref="home.categorias" class="btn">cat</a>
+				</div>
+				<div class="col-md-8" ui-view>
+				</div>
+			</div>
+<!--dependencias  -->
+			<script src="/lib/angular/angular.min.js"></script>
+			<script src="/lib/angular-resource/angular-resource.min.js"></script>
+			<script src="/lib/angular-ui/build/angular-ui-ieshiv.min.js"></script>
+			<script src="/lib/angular-ui/build/angular-ui.min.js"></script>
+			<script scr="/lib/angular-utils/ui-utils-ieshiv.min.js"></script>
+			<script scr="/lib/angular-utils/ui-utils.min.js"></script>
+			<script src="/lib/angular-ui-event/dist/event.min.js"></script>
+			<script src="/lib/angular-ui-indeterminate/dist/indeterminate.min.js"></script>
+			<script src="/lib/angular-ui-mask/dist/mask.min.js"></script>
+			<script src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+			<script src="/lib/angular-ui-scroll/dist/ui-scroll-grid.min.js"></script>
+			<script src="/lib/angular-ui-scroll/dist/ui-scroll-jqlite.min.js"></script>
+			<script src="/lib/angular-ui-scroll/dist/ui-scroll.min.js"></script>
+			<script src="/lib/angular-ui-scrollpoint/dist/scrollpoint.min.js"></script>
+			<script src="/lib/angular-ui-uploader/dist/uploader.min.js"></script>
+			<script src="/lib/angular-ui-validate/dist/validate.min.js"></script>
+			<!-- <script src="/lib/jquery/dist/core.js"></script>  -->
+			<!-- <script src="/lib/jquery/dist/jquery.min.js"></script> -->
+			<!-- <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script> -->
+			<script src="/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+			<script src="/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+<!--config  -->
+			<script src="/modulos/app/app.js"></script>
+			<script src="/modulos/app/app.routes.js"></script>
+<!--controladores  -->
+			<script src="/modulos/home/categorias.controller.js"></script>
+			<script src="/modulos/home/home.controller.js"></script>
+			<script src="/modulos/home/productodetalle.controller.js"></script>
+			<script src="/modulos/home/productopequeño.controller.js"></script>
+<!--servicios  -->
+			
+		</body>
+	</html>
