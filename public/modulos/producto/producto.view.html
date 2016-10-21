@@ -4,7 +4,7 @@
       </h3>
       <div class="row">
         <div class="col-md-6">
-          <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" />
+          <img alt="Bootstrap Image Preview" src={{vm.productos.url_img}} style="" />
           <table class="table">
             <thead>
               <tr>
@@ -102,7 +102,7 @@
               Description lists
             </dt>
             <dd>
-              A description list is perfect for defining terms.
+              {{vm.descrip}}
             </dd>
             <dt>
               Euismod
@@ -114,16 +114,16 @@
               Donec id elit non mi porta gravida at eget metus.
             </dd>
             <dt>
-              Malesuada porta
+              formato :
             </dt>
             <dd>
-              Etiam porta sem malesuada magna mollis euismod.
+              {{vm.formato}}
             </dd>
             <dt>
-              Felis euismod semper eget lacinia
+              presio :
             </dt>
             <dd>
-              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+              ${{vm.precio}}
             </dd>
           </dl>
           <form role="form">

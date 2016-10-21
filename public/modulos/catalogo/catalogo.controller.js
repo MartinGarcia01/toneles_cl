@@ -1,14 +1,16 @@
 (function() {
   angular.module('toneles').controller('catalogoController', catalogoController);
 
-  catalogoController.$inject = [];
+  catalogoController.$inject = ['CatalogoService'];
 
-  function catalogoController() {
+  function catalogoController(CatalogoService) {
     //
     var vm = this;
 
-    vm.msg = "catalogo";
+    var catalogo = CatalogoService;
 
-    console.log('catalogo');
+    vm.productos = catalogo.get();
+
+    console.log(vm.productos);
   }
 })() ;
